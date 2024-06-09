@@ -1,0 +1,821 @@
+@charset "utf-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard';
+    font-size: 14px;
+    font-weight: 1.5;
+    color: #000;
+    min-width: 1320px;
+}
+
+.tittle {
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+/* 헤더 */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1320px;
+    background-color: rgba(42, 42, 42, 0.5);
+    z-index: 99;
+}
+
+.top {
+    width: 1320px;
+    margin: 10px auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.top>a>img {
+    width: 150px;
+
+}
+
+/* 메뉴 */
+.nav {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    margin: 10px 0;
+    width: 616.23px;
+}
+
+.nav>li {
+    position: relative;
+    text-align: center;
+    flex: 1;
+}
+
+.nav>li>a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.nav>li:hover>a {
+    color: #ccc;
+}
+
+/* 서브메뉴 */
+
+.sub {
+    display: none;
+    /*서브메뉴 가리기*/
+    width: 100%;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.sub li a {
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 0;
+
+}
+
+.sub li a:hover {
+    color: #ccc;
+}
+
+/* 검색, 로그인, 장바구니 */
+.top_icon {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    width: 400px;
+}
+
+.top_icon a {
+    margin-left: 10px;
+}
+
+/* 검색 */
+.search{
+    cursor: pointer;
+}
+
+.search img {
+    margin-left: 10px;
+}
+
+.searchbar {
+    position: relative;
+    top: -15px;
+    border-radius: 50px;
+    border: none;
+    width: 0px;
+    height: 40px;
+    transition: all 1s;
+    transform-origin: right;
+
+}
+
+.searchbar.on {
+    width: 150px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* 로그인 */
+.loginbar {
+    position: relative;
+}
+
+.loginbg {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 0;
+    left: 9%;
+    border-radius: 50px;
+    transition: 1s all;
+    transform-origin: left;
+    overflow: hidden;
+}
+
+.loginbar p {
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    right: 15%;
+    font-weight: 500;
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s all;
+
+
+}
+
+/* 로그인 호버 글자 사라짐 */
+.loginbg p {
+    transition: 1s all;
+}
+
+.loginbar:hover .loginbg p {
+    transform: translateX(60px);
+}
+
+/* 로그인 창 호버 색깔 바뀜 */
+.loginbar:hover .login {
+    transform: translateX(60px);
+}
+
+.loginbg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #401d14;
+    left: -60px;
+    border-radius: 50px;
+    transition: 1s all;
+}
+
+.loginbar:hover .loginbg::before {
+    left: 0;
+}
+
+/* 메인배너 */
+.mb_bg {
+    width: 100%;
+    text-align: center;
+    background: url(../images/sub3/mb.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.mb1 {
+    width: 1320px;
+    height: 500px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mb_text h1 {
+    font-size: 40px;
+    text-shadow: 4px 2px 2px #2a2a2a;
+}
+
+.mb_text .tittle{
+    font-size: 48px;
+    padding-top: 14px;
+    text-shadow: 4px 2px 2px #2a2a2a;
+}
+
+/* 페이드 슬라이드 */
+
+.mySwiper{
+    width: 1320px;
+    margin: auto;
+    
+}
+
+
+.itembox .swiper-slide{
+    background-color: #fff;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+.itembox  .swiper-slide a{
+    color: #fff;
+    position: relative;
+    width: 240px;
+    height: 380px;
+    margin: 28px 28px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px 40px 0 40px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sl{
+    width: 240px;
+    height: 380px;
+    margin: 28px 28px;
+}
+
+.itembox .swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    transition: all 1s;
+  }
+
+  .gallery_text2{
+    width: 240px;
+    height: 82px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 0 40px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* 슬라이드 요소 색깔 */
+
+  .bgc1 .gallery_text2{
+    background-color: rgb(140, 125, 111);
+  }
+
+  .bgc2 .gallery_text2{
+    background-color: rgb(108, 128, 100);
+  }
+
+  .bgc3 .gallery_text2{
+    background-color: rgb(103, 120, 134);
+  }
+
+  .bgc4 .gallery_text2{
+    background-color: rgb(134, 103, 115);
+  }
+
+  /* 슬라이드 텍스트 */
+
+  .con1_text2{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .borderline_div{
+    width: 150px;
+    margin: auto;
+    border-top: #000 solid 1px;
+}
+
+  .itembox .swiper-slide .con1_text2 p{
+    padding: 14px 0 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+  .itembox .swiper-slide h2{
+    font-size: 15px;
+  }
+
+  /*이동버튼 영역 색상 바꾸기*/
+.itembox .swiper-button-prev,
+.itembox .swiper-button-next {
+    color: #000;
+}
+
+/*이동버튼 영역 호버 시 색상 바꾸기*/
+.itembox .swiper-button-prev:hover,
+.itembox .swiper-button-next:hover {
+    color: #2a2a2a;
+}
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.itembox .swiper-pagination-bullet {
+    background: #2a2a2a;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.itembox .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.itembox .swiper-horizontal>.swiper-pagination-bullets,
+.itembox .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 2%;
+}
+
+/* 할인이벤트배너 */
+.sb {
+    width: 1320px;
+    margin: auto;
+    height: 460px;
+    position: relative;
+}
+
+.sb_bg {
+    background: url(../images/index/salebanner.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.sb_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -50%);
+}
+
+.sb_text ol {
+    list-style: inside decimal;
+
+}
+
+.sb_text h1 {
+    font-size: 42px;
+    color: #FBF6E0;
+}
+
+.sb_text ol {
+    padding: 22px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FBF6E0;
+}
+
+.sb_text p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FBF6E0;
+}
+
+.readmore2 {
+    width: 190px;
+    height: 52px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-175%, 180%);
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.readmore2 a {
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.readmore2:hover {
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.readmore2:hover a {
+    color: #000;
+}
+
+/* 할인상품 이미지 */
+.sale_img_box {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* 슬라이드꾸미기 */
+
+.slide {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    margin: 80px auto 0;
+}
+
+.linebox {
+    position: relative;
+}
+
+/*슬라이드 액자 테두리*/
+
+.salebn_line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+/*슬라이드 액자 테두리*/
+
+.slide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.slide .swiper-slide a {
+    display: block;
+    width: 90%;
+    height: 90%;
+}
+
+.slide .swiper-slide img:nth-child(1) {
+    display: block;
+    width: 100%;
+}
+
+.slide .swiper-slide img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 8%;
+}
+
+
+/* 이동버튼 이미지로 바꾸기 */
+.slidebox {
+    width: 525px;
+    height: 420px;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    padding: 0 60px;
+}
+
+.slidebox .swiper-button-prev,
+.slidebox .swiper-button-next {
+    width: 50px;
+    height: 50px;
+}
+
+.slidebox .swiper-button-prev {
+    left: 0;
+}
+
+.slidebox .swiper-button-next {
+    right: 0;
+}
+
+.slidebox .swiper-button-prev:after,
+.slidebox .swiper-button-next:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.slidebox .swiper-button-prev:after {
+    background: url(../images/index/leftbtn.png);
+    transition: 0.5s;
+}
+
+.slidebox .swiper-button-next:after {
+    background: url(../images/index/rightbtn.png);
+    transition: 0.5s;
+}
+
+.slidebox .swiper-button-prev:hover:after {
+    background: url(../images/index/leftbtn_hover.png);
+}
+
+.slidebox .swiper-button-next:hover:after {
+    background: url(../images/index/rightbtn_hover.png);
+}
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.slide .swiper-pagination-bullet {
+    background: #2a2a2a;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.slide .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.slide .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0px;
+}
+
+/* 100% 안전결제 */
+.paybar{
+    background-color: #d5cac7;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.pay{
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay li{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.pay img{
+    display: block;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.footer_box {
+    border-bottom: 1px solid #fff;
+}
+
+.footer1 {
+    width: 1320px;
+    margin: auto;
+    padding: 40px 0;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer_content1 {
+    width: 660px;
+    padding-left: 30px;
+}
+
+.footer_nav {
+    width: 70%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.footer_nav>li {
+    flex: 1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+/* footer 서브메뉴 */
+.footer_nav>li>ul {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer_nav>li>ul a {
+    padding: 10px 0;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer_nav>li>ul a:hover {
+    color: #ccc;
+}
+
+/* 고객지원 페이먼트 SNS */
+
+.footer_content2 {
+    margin-right: 100px;
+}
+
+.footer_content2>a {
+    width: 130px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_content2>a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.footer_content2>a:nth-child(2) {
+    margin-top: 7px;
+    margin-bottom: 40px;
+}
+
+.footer_content2>p {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.footer_pay_icon {
+    text-align: start;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+
+.footer_pay_icon img:nth-child(2) {
+    padding: 0 5px;
+}
+
+.footer_pay_icon a:nth-child(2) {
+    padding: 0 5px;
+}
+
+/* 한국어 카피라이트 */
+
+.footer2 {
+    width: 1320px;
+    margin: auto;
+    padding: 30px 0;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.korean {
+    width: 140px;
+    height: 53px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    align-items: center;
+    padding: 0 15px;
+    font-weight: 500;
+}
+
+.korean:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.korean>img {
+    width: 35px;
+    height: 35px;
+}
+
+.korean>h3 {
+    font-size: 17px;
+    padding-right: 10px;
+}
+
+/* 탑버튼 */
+.top_btn {
+    position: fixed;
+    bottom: 15%;
+    right: 10%;
+}
+
+.btn_in {
+    position: relative;
+}
+
+.btn_in>a>img:nth-child(2) {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn_in>a:hover>img:nth-child(1) {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.btn_in>a:hover>img:nth-child(2) {
+    opacity: 1;
+    transition: all 0.5s;
+}
