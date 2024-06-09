@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400"><!--다른 기기에서 1400px로 보임-->
+    <title>감성커피</title>
+    <!-- 폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png"><!-- 32px * 32px 심볼이나 브랜드 응용해서 만들기 -->
+    <!-- 슬라이드 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- index css -->
+    <link rel="stylesheet" href="./css/sub2.css">
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div class="top">
+            <!-- 상단 로고 -->
+            <a href="./index.html"><img src="./images/header/toplogo.png" alt="감성커피"></a>
+            <!-- 메뉴 -->
+            <ul class="nav">
+                <li><a href="./sub1.html">브랜드</a>
+                    <ul class="sub"> <!-- 서브메뉴-->
+                        <li><a href="./sub1.html#brand">브랜드소개</a></li>
+                        <li><a href="./sub1.html#Quality">퀄리티</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub2.html">커피</a>
+                    <ul class="sub"> <!-- 서브메뉴-->
+                        <li><a href="./sub2.html">싱글</a></li>
+                        <li><a href="./sub2.html">블렌딩</a></li>
+                        <li><a href="./sub2.html">스페셜</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub3.html">e-SHOP</a>
+                    <ul class="sub"> <!-- 서브메뉴-->
+                        <li><a href="./sub3.html">핸드드립</a></li>
+                        <li><a href="./sub3.html">커피머신</a></li>
+                        <li><a href="./sub3.html">악세서리</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub4.html">EVENT</a>
+                    <ul class="sub"> <!-- 서브메뉴-->
+                        <li><a href="./sub4.html">클럽멤버혜택</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub5.html">고객서비스</a>
+                    <ul class="sub"> <!-- 서브메뉴-->
+                        <li><a href="./sub5.html">고객지원</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- 검색, 로그인, 장바구니 -->
+            <ul class="top_icon">
+                <!--검색-->
+                <li>
+                    <div class="search">
+                        <input type="search" class="searchbar"><img src="./images/header/searchicon.png" alt="검색">
+                    </div>
+                </li>
+                <!--로그인-->
+                <li class="loginbar"><a href="#none"><img src="./images/header/loginbox.png" alt="로그인">
+                        <div class="loginbg">
+                            <p>로그인</p>
+                        </div>
+                    </a>
+                    <a href="#none" class="login"><img src="./images/header/loginicon.png" alt="로그인"></a>
+                </li>
+                <!--장바구니-->
+                <li><a href="#none"><img src="./images/header/shopicon.png" alt="장바구니"></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 메인배너 -->
+    <div class="mb_bg">
+        <div class="mb1">
+            <div class="mb_text">
+                <h1>완벽한 커피 한잔이 주는 즐거움</h1>
+                <h1 class="tittle">ROASTERY GAMSUNG COFFEE</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Best of Best -->
+    <div class="con1_text" id="best_item">
+        <h1 class="tittle" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-back">
+            BEST of BEST
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-back">
+            언제나 옳은 선택 <br>
+            싱글, 스페셜, 블렌딩 종류를 가리지 않고 많은 사랑을 받았던 최고의 커피를 즐겨보세요
+        </p>
+        <div class="borderline_div"></div>
+    </div>
+    <!-- 상품 이미지 -->
+    <div class="swiper-container gallery-center">
+        <div class="gallery-center_inner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#none">
+                        <img src="./images/index/coffee/Aricha.png" alt="아리차">
+                        <img src="./images/index/coffee/Aricha_g2.png" alt="아리차">
+                        <div class="gallery_text">
+                            <h2>
+                                에티오피아 예가체프 G1 <br>
+                                TOP 아리차
+                            </h2>
+                            <p>
+                                향긋한 장미향과 달콤한 복숭아
+                            </p>
+                        </div>
+                        <div class="polygon p1"></div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none">
+                        <img src="./images/index/coffee/moon.png" alt="문블렌드">
+                        <img src="./images/index/coffee/moon_g2.png" alt="문블렌드">
+                        <div class="gallery_text">
+                            <h2>
+                                문 블렌드
+                            </h2>
+                            <p>
+                                부드러움과 산미의 밸런스
+                            </p>
+                        </div>
+                        <div class="polygon p2"></div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none"><img src="./images/index/coffee/blacksugar.png" alt="블랙슈가넛">
+                        <img src="./images/index/coffee/blacksugar_g2.png" alt="블랙슈가넛">
+                        <div class="gallery_text">
+                            <h2>
+                                블랙 슈가넛 블렌드
+                            </h2>
+                            <p>
+                                고소함 가득한 풍미
+                            </p>
+                        </div>
+
+                        <div class="polygon p3"></div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none"><img src="./images/index/coffee/torima.png" alt="토리마">
+                        <img src="./images/index/coffee/torima_g2.png" alt="토리마">
+                        <div class="gallery_text">
+                            <h2>
+                                콜롬비아 수프리모 토리마
+                            </h2>
+                            <p>
+                                밀키한 부드러움과 적포도의 단맛
+                            </p>
+                        </div>
+                        <div class="polygon p4"></div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none"><img src="./images/index/coffee/cacao.png" alt="화이트카카오">
+                        <img src="./images/index/coffee/cacao_g2.png" alt="화이트카카오">
+                        <div class="gallery_text">
+                            <h2>
+                                화이트 카카오 블렌드
+                            </h2>
+                            <p>
+                                콜렛 풍미를 더한 달콤한 바디감
+                            </p>
+                        </div>
+                        <div class="polygon p5"></div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none"><img src="./images/index/coffee/sugar.png" alt="슈가넛">
+                        <img src="./images/index/coffee/sugar_g2.png" alt="슈가넛">
+                        <div class="gallery_text">
+                            <h2>
+                                슈가넛 블렌드
+                            </h2>
+                            <p>
+                                설탕처럼 달달함과 너트한 고소함
+                            </p>
+                        </div>
+                        <div class="polygon p6"></div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none"><img src="./images/index/coffee/classic.png" alt="클래식">
+                        <img src="./images/index/coffee/classic_g2.png" alt="클래식">
+                        <div class="gallery_text">
+                            <h2>
+                                클래식 블렌드
+                            </h2>
+                            <p>
+                                고소하고 부드러운 맛과 향
+                            </p>
+                        </div>
+                        <div class="polygon p7"></div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#none"><img src="./images/index/coffee/pb.png" alt="피베리">
+                        <img src="./images/index/coffee/pbg2.png" alt="피베리">
+                        <div class="gallery_text">
+                            <h2>
+                                케냐 피베리
+                            </h2>
+                            <p>
+                                과일의 산뜻함과 부드러운 달콤함
+                            </p>
+                        </div>
+                        <div class="polygon p8"></div>
+                    </a>
+                </div>
+            </div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!-- single coffee -->
+    <div class="itembox">
+        <!-- 상품 이미지 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bgc1">
+                    <div>
+                        <div class="con1_text2">
+                            <h1 class="tittle" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-easing="ease-out-back">
+                                Single coffee
+                            </h1>
+                            <p data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-back">
+                                원두가 가진 기본적인 풍미 하나도 놓치지 않았습니다
+                            </p>
+                            <div class="borderline_div"></div>
+                        </div>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/mountain.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    인도네시아 만델링 가요마운틴 G1
+                                </h2>
+                                <p>
+                                    중후한 바디감&깊고 진한 고유의 맛
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/G2.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    에티오피아 시다모 G2
+                                </h2>
+                                <p>
+                                    본연의 꽃내음과 레몬의 상큼함
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/yegaG2.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    에티오피아 예가체프 G2
+                                </h2>
+                                <p>
+                                    향긋한 꽃과 와인, 군고구마의 달짝지근함
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/AA.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    탄자니아AA
+                                </h2>
+                                <p>
+                                    깊은 향과 부드러움, 산미와 단맛의 밸런스
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/SHB.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    과테말라 안티구아 SHB
+                                </h2>
+                                <p>
+                                    비스킷, 스모키한 바디감과 초콜릿
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/medellin.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    콜롬비아 수프리모 메델린
+                                </h2>
+                                <p>
+                                    마일드한 커피의 정석, 캐슈넛의 단맛과 캐러
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/serado.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    브라질 세라도
+                                </h2>
+                                <p>
+                                    너트한 견과류의 고소한 단맛
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <div class="sl"></div>
+                        <div class="sl"></div>
+                    </div>
+                </div>
+
+                <!-- 스페셜커피 -->
+                <div class="swiper-slide bgc2">
+                    <div>
+                        <div class="con1_text2">
+                            <h1 class="tittle" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-easing="ease-out-back">
+                                Special coffee
+                            </h1>
+                            <p data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-back">
+                                원두가 가진 기본적인 풍미 하나도 놓치지 않았습니다
+                            </p>
+                            <div class="borderline_div"></div>
+                        </div>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/diamante.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    콜롬비아 라 페냐 콜롬비아 산
+                                    프란시스코 콜롬비아 엘 디아만테
+                                </h2>
+                                <p>
+                                    깊은 향과 부드러움, 산미와 단맛의 밸런스
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/koke.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    에티오피아 예가체프 G1 TOP 코케허니
+                                </h2>
+                                <p>
+                                    잘 익은 감귤류의 향미, 과일의 단맛
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/momora.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    에티오피아 예가체프 G1 모모라
+                                </h2>
+                                <p>
+                                    크랜베리의 깊은 산미, 잘 익은 딸기
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/yellow.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    브라질 파젠다 산타루시아 옐로우버번
+                                </h2>
+                                <p>
+                                    비스킷의 고소달달함
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/aricha.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    에티오피아 예가체프 G1 TOP 아리차
+                                </h2>
+                                <p>
+                                    향긋한 장미향과 달콤한 복숭아
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/pb.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    케냐 피베리
+                                </h2>
+                                <p>
+                                    과일의 산뜻함과 부드러운 달콤함
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/torima.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    콜롬비아 수프리모 토리마
+                                </h2>
+                                <p>
+                                    밀키한 부드러움과 적포도의 단맛
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/decaffein.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    콜롬비아 수프리모 스위스 워터 디카페인
+                                </h2>
+                                <p>
+                                    카페인에 민감하신 분들을 위한 디카페인
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <div class="sl"></div>
+                    </div>
+                </div>
+
+                <!-- 블렌드커피 -->
+                <div class="swiper-slide bgc3">
+                    <div>
+                        <div class="con1_text2">
+                            <h1 class="tittle" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-easing="ease-out-back">
+                                Blending coffee
+                            </h1>
+                            <p data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-back">
+                                원두가 가진 기본적인 풍미 하나도 놓치지 않았습니다
+                            </p>
+                            <div class="borderline_div"></div>
+                        </div>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/moon.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    문 블렌드
+                                </h2>
+                                <p>
+                                    부드러움과 산미의 밸런스
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/classic.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    클래식 블렌드
+                                </h2>
+                                <p>
+                                    고소하고 부드러운 맛과 향
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/sugar.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    슈가넛 블렌드
+                                </h2>
+                                <p>
+                                    설탕처럼 달달함과 너트한 고소함
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/cacao.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    화이트 카카오 블렌드
+                                </h2>
+                                <p>
+                                    초콜렛 풍미를 더한 달콤한 바디감
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/blacksugar.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    블랙 슈가넛 블렌드
+                                </h2>
+                                <p>
+                                    고소함 가득한 풍미
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/feather.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    소프트 페더 블렌드
+                                </h2>
+                                <p>
+                                    적절한 산미와 부드러운 고소함
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/gusu.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    구수달달 블렌드
+                                </h2>
+                                <p>
+                                    누룽지의 구수함과 끝에 오는 달달함
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <a href="#none">
+                            <img src="./images/sub2/coffee/hazelnut.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    헤이즐넛 향 커피
+                                </h2>
+                                <p>
+                                    중후한 바디감과 고소한 헤이즐넛
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a><a href="#none">
+                            <img src="./images/sub2/coffee/mocha.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    모카 하우스 블렌드
+                                </h2>
+                                <p>
+                                    은은한 모카향의 깊은 부드러움
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a><a href="#none">
+                            <img src="./images/sub2/coffee/premium.png" alt="커피">
+                            <img src="./images/sub2/coffee/singlegraph.png" alt="커피">
+                            <div class="gallery_text2">
+                                <h2>
+                                    프리미엄 블렌드
+                                </h2>
+                                <p>
+                                    와인향의 산미와 중후한 바디감
+                                </p>
+                            </div>
+                            <div class="polygon2"></div>
+                        </a>
+                        <div class="sl"></div>
+                        <div class="sl"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 100% 안전결제 -->
+    <div class="paybar">
+        <ul class="pay">
+            <li>100% 안전결제</li>
+            <li><img src="./images/sub2/card.png" alt="안전결제"></li>
+            <li><img src="./images/sub2/bank.png" alt="안전결제"></li>
+            <li><img src="./images/sub2/npay.png" alt="안전결제"></li>
+        </ul>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_box">
+            <div class="footer1">
+                <div class="footer_content1">
+                    <ul class="footer_nav">
+                        <li>브랜드
+                            <ul> <!-- 서브메뉴-->
+                                <li><a href="./sub1.html">브랜드소개</a></li>
+                                <li><a href="./sub1.html">퀄리티</a></li>
+                            </ul>
+                        </li>
+                        <li>커피
+                            <ul> <!-- 서브메뉴-->
+                                <li><a href="./sub2.html">싱글</a></li>
+                                <li><a href="./sub2.html">블렌딩</a></li>
+                                <li><a href="./sub2.html">스페셜</a></li>
+                            </ul>
+                        </li>
+                        <li>e-SHOP
+                            <ul> <!-- 서브메뉴-->
+                                <li><a href="./sub3.html">핸드드립</a></li>
+                                <li><a href="./sub3.html">커피머신</a></li>
+                                <li><a href="./sub3.html">악세서리</a></li>
+                            </ul>
+                        </li>
+                        <li>EVENT
+                            <ul> <!-- 서브메뉴-->
+                                <li><a href="./sub4.html">클럽멤버혜택</a></li>
+                            </ul>
+                        </li>
+                        <li>고객서비스
+                            <ul> <!-- 서브메뉴-->
+                                <li><a href="./sub5.html">고객지원</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 고객지원 페이먼트 SNS -->
+                <div class="footer_content2">
+                    <a href="#none">CONTACT US</a>
+                    <a href="./sub5.html">고객지원</a>
+                    <p>Payment:</p>
+                    <div class="footer_pay_icon">
+                        <img src="./images/footer/payments-visa.png" alt="visa">
+                        <img src="./images/footer/payments-master.png" alt="master">
+                        <img src="./images/footer/payments-americanexpress.png" alt="americanexpress">
+                    </div>
+                    <p>Follow us:</p>
+                    <div class="footer_pay_icon">
+                        <a href="#none"><img src="./images/footer/instaricon.png" alt="instar"></a>
+                        <a href="#none"><img src="./images/footer/kakaoicon.png" alt="kakao"></a>
+                        <a href="#none"><img src="./images/footer/facebookicon.png" alt="facebook"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 한국어 카피라이트 -->
+        <div class="footer2">
+            <div class="korean">
+                <img src="./images/footer/korea.png" alt="한국어">
+                <h3>KOREA</h3>
+            </div>
+            <div class="adress">
+                <p>(주)GAMSUNG</p>
+                <p>대표자 : 김민준 사업자등록번호 : 128-82-11091 주소 : 부산광역시 중구 중앙대로 26 다원중앙타워</p>
+                <p>대표번호 : 051-517-9848 고객문의 : 1:1 게시판</p>
+                <p>마케팅제휴 : KIM3126@adress.com</p>
+            </div>
+            <div class="copyright">
+                Copyright(c) 2021 www.gamsungcoffee.co.kr All rights reserved.
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- 탑 버튼 -->
+    <div class="top_btn">
+        <div class="btn_in">
+            <a href="#">
+                <img src="./images/sub2/topbtn.png" alt="btn">
+                <img src="./images/sub2/topbtn_hover.png" alt="btn">
+            </a>
+        </div>
+    </div>
+
+    <!-- js -->
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- aos 스크롤 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js 경로 -->
+    <script src="./script/sub2.js"></script>
+</body>
+
+</html>
